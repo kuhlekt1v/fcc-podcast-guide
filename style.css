@@ -1,0 +1,188 @@
+
+html {
+  background-color: #5cdb95;
+}
+/* Page header */
+.header {
+  grid-column-start: span 4;
+  position: relative;
+  text-align: left;
+  color: #05386b;
+}
+h1 {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 4.0em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid;
+}
+#ultimate {
+  font-family: 'Amatic SC', cursive;
+  font-size: 0.75em;
+  margin-bottom: 10px;
+}
+
+/* Main content area */
+.container {
+  display: grid;
+  padding: 10px;
+  margin-left: 0.75vw;
+  margin-right: 0.75vw;
+  grid-template-rows:  110px 670px 40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Podcast information section */
+.box-left{
+  display: grid;
+  grid-column-start: span 3;
+  grid-row-start: 2 / 3;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #edf5e1;
+}
+.podcast {
+  display: grid;
+  grid-column-start: span 10;
+  padding-right: 10px;
+  grid-template-columns: minmax(150px, 300px) 2fr;
+  grid-template-rows: minmax(50px, 150px);
+  grid-column-gap: 1em;
+  margin-left: .75vw;
+}
+.logo-img {
+  height: 100%;
+  width: 75%;
+}
+.img-short {
+  display: block;
+  margin-top: 8%;
+  height: 60%;
+  width: 75%;
+}
+.image{
+ grid-row-start: span 1;
+}
+.description{
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+grid-row-start: span 1;
+}
+.description a {
+  text-decoration: none;
+  color: #379683;
+  font-size: 1.25em;
+}
+.description a:visited {
+  text-decoration: none;
+  color: #379683;
+}
+.description a:hover{
+  text-decoration: none;
+  color: #8ee4af;
+}
+
+/* Followers section */
+.box-right{
+  display: grid;
+  grid-column-start: 4;
+  grid-template-rows: 50px auto;
+  background-color: #edf5e1;
+  margin-left: 1em;
+}
+h2 {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 1.75em;
+  color: #05386b;
+  padding-left: 15px;
+  padding-top: 10px;
+  margin: 0;
+}
+.followers-container{
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 4vw;
+  grid-gap: 20px;
+}
+.follower-icon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Main page footer area */
+.footer {
+  grid-column-start: span 4;
+}
+.footer div {
+  font-size: .75em;
+  font-family: 'Open Sans', sans-serif;
+  color: #919191;
+  text-align: center;
+  border-top: .5px solid #919191;
+  padding-top: 10px;
+  margin-top: 30px;
+}
+
+/* Responsive page sizes */
+@media screen and (max-height: 900px) {
+  
+}
+/* Smaller than 995 */
+@media screen and (max-width: 995px) {
+  .header{
+    font-size: .75em;
+    max-height: 90px;
+    margin-bottom: 0;
+  }
+  .box-left {
+    margin-top: -20px;
+  }
+  .box-right {
+    margin-top: -20px;
+  }
+  #ultimate {
+    white-space: nowrap;
+  }
+}
+
+/* Smaller than 750*/
+@media screen and (max-width: 750px) {
+  .header{
+    font-size: .6em;
+    max-height: 75px;
+  }
+  .box-left {
+    margin-top: -35px;
+  }
+  .box-right {
+    margin-top: -35px;
+  }
+ 
+}
+/* Smaller than 625*/
+@media screen and (max-width: 625px) {
+  h1{
+    font-size: 3.25em;
+    max-height: 100px;
+  }
+  .header {
+    max-height: 65px;
+  }
+}
+
+/* Smaller than 400*/
+@media screen and (max-width: 400px) {
+  h1{
+    font-size: 2.75em;
+    max-height: 100px;
+  }
+  .header {
+    max-height: 75px;
+  }
+}
